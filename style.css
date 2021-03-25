@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+}
+
+.images {
+  padding: 1rem;
+  border-radius: 1px;
+}
+
+.images__rs,
+.images__art-direction {
+  border-radius: 1px;
+
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.images__rs img,
+.images__art-direction img {
+  width: 100%;
+}

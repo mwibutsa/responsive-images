@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Images</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Responsive Images</h1>
+
+        <div class="images">
+            <!--  (rs) Resolution switching START -->
+
+            <div class="images__rs">
+                <h2>1. Resolution switching</h2>
+
+                <div class="images__rs images__rs--different-sizes">
+                    <h3>1.1. Different sizes</h3>
+                    <img srcset="images/rs-sizes-small.jpg 600w,
+             images/rs-sizes-medium.jpg 800w, images/rs-sizes-big.jpg 5148w" sizes="(max-width: 600px) 70vw,
+            (max-width:900px) 80vw, 1200px" src="images/rs-sizes-default.jpg" alt="Different sizes">
+                </div>
+
+                <div class="images__rs images__rs-- different-resolutions">
+                    <h3>1.2. Different resolutions</h3>
+                    <img srcset="images/rs-res-low.jpg 1x,
+                                images/rs-res-high.jpg 2x" src="images/rs-res-default.jpg"
+                        alt="Resolution switching different resolutions">
+
+                </div>
+            </div>
+
+            <!-- END resolution switching -->
+
+
+            <!-- Art direction start -->
+
+            <div class="images__art-direction">
+                <h2>2. Art direction</h2>
+                <picture>
+                    <source media="(min-width: 1040px )" srcset="images/artd-big.jpg">
+                    <source media="(max-width: 600px )" srcset="images/artd-small.jpg">
+                    <img src="images/artd-default.jpg" alt="Machine on blue">
+                </picture>
+            </div>
+            <!-- END Art direction -->
+        </div>
+    </body>
+
+</html>
